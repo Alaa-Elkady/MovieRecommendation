@@ -9,20 +9,12 @@ export default function NavBar() {
       <ul className="nav-links">
        <Link to="/"> <li>Home</li></Link>
         <Link to="/movies"><li>Movies</li></Link>
-        <li> Series</li>
-        <li>Trending</li>
+       <Link to="/trending"> <li> Trending</li></Link>
+        
       </ul>
-      <div className="search-container">
-        <input
-          type="text"
-          name="search"
-          placeholder="Search..."
-          className="search-input"
-        />
-        <a href="#" className="search-btn">
-          <i className="fas fa-search"></i>
-        </a>
-      </div>
+    
+      
+      
     </nav>
   );
 }

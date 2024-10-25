@@ -4,12 +4,12 @@ const Filters = ({ genres, selectedGenre, onGenreChange }) => {
   return (
     <div className="filters">
       <label>Filter by Genre:</label>
-      <select value={selectedGenre} onChange={onGenreChange}>
-        <option value="">All</option>
+      <ul className="genre-list" value={selectedGenre}  >
+        <li onClick={onGenreChange}>All</li>
         {genres.map(genre => (
-          <option key={genre.id} value={genre.id}>{genre.name}</option>
+          <li key={genre.id} value={genre.id} onClick={onGenreChange}>{genre.name} </li>
         ))}
-      </select>
+      </ul>
     </div>
   );
 };
