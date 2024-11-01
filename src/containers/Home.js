@@ -12,14 +12,19 @@ export default function Home() {
     const loadMovies = async () => {
       const Family = await fetchMovies(1, "10751");
       setFamilyMovies(Family.data.results);
-      const Drama = await fetchMovies(1, "10751");
+
+      const Drama = await fetchMovies(1, "18");
       setDramaMovies(Drama.data.results);
-      const Romance = await fetchMovies(1, "18");
+
+      const Romance = await fetchMovies(1, "10749");
       setRomanceMovies(Romance.data.results);
+
       const Comedy = await fetchMovies(1, "35");
       setComedyMovies(Comedy.data.results);
+
       const Action = await fetchMovies(1, "28");
       setActionMovies(Action.data.results);
+      
       const trendingMovies = await fetchTrendingMovies("day");
       setTrendingMovies(trendingMovies);
     };

@@ -11,8 +11,8 @@ export default function Trending()  {
     loadMovies();
   });
   return (
-    <div className="trendSection">
-      <h2>Trending</h2>
+    <div className="trending">
+      <h2>Trending Movies</h2>
       <div className="movie-list">
         {trendingMovies.map((movie) => (
           <MovieCard key={movie.id} movie={movie} className="movie-card" />

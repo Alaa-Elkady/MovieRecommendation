@@ -3,7 +3,7 @@ import React from 'react';
 const Filters = ({ genres, selectedGenre, onGenreChange }) => {
   return (
     <div className="filters">
-      <label>Filter by Genre:</label>
+      
       <ul className="genre-list" value={selectedGenre}  >
         <li onClick={onGenreChange}>All</li>
         {genres.map(genre => (

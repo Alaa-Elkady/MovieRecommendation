@@ -6,6 +6,7 @@ import NavBar from "./components/NavBar";
 import Home from "./containers/Home";
 import Details from "./containers/info";
 import Trending from "./containers/Trending";
+import Footer from "./components/Footer";
 function App() {
   return (
     <div className="App">
@@ -17,6 +18,7 @@ function App() {
           <Route path="/movies" element={<Movies />} />
           <Route path="/trending" element={<Trending />} />
         </Routes>
+        <Footer />
       </Router>
     </div>
   );

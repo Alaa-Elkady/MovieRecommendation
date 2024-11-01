@@ -45,7 +45,7 @@ export default function Info() {
           Movie Name :<div className="title w">{movie.title}</div>
         </div>
         <div className="content-desc r">
-          Overview:<div className="desc w">{movie.overview}</div>
+          Overview:<p className="desc w">{movie.overview}</p>
         </div>
         <div className="released-date r">
           Released date :<div className="date w">{movie.release_date}</div>

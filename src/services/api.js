@@ -40,3 +40,4 @@ export const fetchTrendingMovies = async (timeWindow = 'day') => {
     throw error;
   }
 };
+// https://api.themoviedb.org/3/discover/movie?api_key=fe39c088e1b5e1057541d1d9aec1ac62&page=1
